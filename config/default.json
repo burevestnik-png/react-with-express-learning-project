@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "mongoURI": "mongodb+srv://yarki:BYSQrCXhiPZhsH6@cluster0.e3n5p.azure.mongodb.net/app?retryWrites=true&w=majority",
-  "jwtSecret": "sad320lfKa0"
+  "jwtSecret": "sad320lfKa0",
+  "baseUrl": "http://localhost:5000"
 }
