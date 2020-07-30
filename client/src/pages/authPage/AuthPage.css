@@ -1,0 +1,23 @@
+.specified-button {
+  margin-right: 10px;
+}
+
+.input-field label {
+  color: white;
+}
+.input-field input[type=text],
+.input-field input[type=password] {
+  border-bottom: 1px solid white !important;
+  color: white !important;
+}
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+.input-field input[type=text]:focus + label,
+.input-field input[type=password]:focus + label {
+  color: white !important;
+}
+
+/*# sourceMappingURL=AuthPage.css.map */
