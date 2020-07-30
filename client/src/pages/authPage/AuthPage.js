@@ -56,21 +56,23 @@ const AuthPage = () => {
                         <span className="card-title">Registration</span>
 
                         <div>
-                            <div className="input-field">
+                            <div className="input-field auth-input">
                                 <input
                                     id="email"
                                     type="text"
                                     name="email"
+                                    value={form.email}
                                     onChange={changeHandler}
                                 />
                                 <label htmlFor="email">Email</label>
                             </div>
 
-                            <div className="input-field">
+                            <div className="input-field auth-input">
                                 <input
                                     id="password"
                                     type="password"
                                     name="password"
+                                    value={form.password}
                                     onChange={changeHandler}
                                 />
                                 <label htmlFor="password">Password</label>

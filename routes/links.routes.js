@@ -11,7 +11,7 @@ router.post(
     async (request, response) => {
         try {
             const baseUrl = config.get('baseUrl');
-            const {from} = req.body;
+            const {from} = request.body;
 
             const code = shortid.generate();
 
