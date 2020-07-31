@@ -56,7 +56,7 @@ router.get(
     auth,
     async (request, response) => {
         try {
-            const link = await Link.findById(request.params.id) // ???
+            const link = await Link.findById(request.params.id)
             response.json(link)
         } catch (e) {
             response.status(500).json({
