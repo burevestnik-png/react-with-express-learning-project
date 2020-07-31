@@ -4,10 +4,12 @@
   "description": "MERN stack",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "server": "nodemon app.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "cross-env NODE_ENV=development nodemon app.js",
+    "client": "cross-env NODE_ENV=development npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "mern",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
     "nodemon": "^2.0.4"
   }
 }
